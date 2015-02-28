@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A43BDEC41AA1B63A0094E617 /* clap-button.png in Resources */ = {isa = PBXBuildFile; fileRef = A43BDEC11AA1B63A0094E617 /* clap-button.png */; };
+		A43BDEC51AA1B63A0094E617 /* clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = A43BDEC21AA1B63A0094E617 /* clap.wav */; };
+		A43BDEC61AA1B63A0094E617 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A43BDEC31AA1B63A0094E617 /* icon.png */; };
+		A43BDEC81AA1B8D70094E617 /* Clap.m in Sources */ = {isa = PBXBuildFile; fileRef = A43BDEC71AA1B8D70094E617 /* Clap.m */; };
+		A43BDECE1AA1B9630094E617 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43BDECD1AA1B9630094E617 /* AudioToolbox.framework */; };
 		A4BA15191A99B4C30039CA61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BA15181A99B4C30039CA61 /* main.m */; };
 		A4BA151C1A99B4C30039CA61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BA151B1A99B4C30039CA61 /* AppDelegate.m */; };
 		A4BA151F1A99B4C30039CA61 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BA151E1A99B4C30039CA61 /* ViewController.m */; };
@@ -27,6 +32,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A43BDEC11AA1B63A0094E617 /* clap-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "clap-button.png"; path = "Images.xcassets/clap-button.png"; sourceTree = "<group>"; };
+		A43BDEC21AA1B63A0094E617 /* clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = clap.wav; path = Images.xcassets/clap.wav; sourceTree = "<group>"; };
+		A43BDEC31AA1B63A0094E617 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Images.xcassets/icon.png; sourceTree = "<group>"; };
+		A43BDEC71AA1B8D70094E617 /* Clap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Clap.m; sourceTree = "<group>"; };
+		A43BDECA1AA1B9310094E617 /* Clap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Clap.h; sourceTree = "<group>"; };
+		A43BDECB1AA1B9590094E617 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		A43BDECD1AA1B9630094E617 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A4BA15131A99B4C30039CA61 /* clap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4BA15171A99B4C30039CA61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4BA15181A99B4C30039CA61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A43BDECE1AA1B9630094E617 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,8 @@
 		A4BA150A1A99B4C30039CA61 = {
 			isa = PBXGroup;
 			children = (
+				A43BDECD1AA1B9630094E617 /* AudioToolbox.framework */,
+				A43BDECB1AA1B9590094E617 /* AdSupport.framework */,
 				A4BA15151A99B4C30039CA61 /* clap */,
 				A4BA152F1A99B4C30039CA61 /* clapTests */,
 				A4BA15141A99B4C30039CA61 /* Products */,
@@ -81,6 +96,9 @@
 		A4BA15151A99B4C30039CA61 /* clap */ = {
 			isa = PBXGroup;
 			children = (
+				A43BDEC11AA1B63A0094E617 /* clap-button.png */,
+				A43BDEC21AA1B63A0094E617 /* clap.wav */,
+				A43BDEC31AA1B63A0094E617 /* icon.png */,
 				A4BA151A1A99B4C30039CA61 /* AppDelegate.h */,
 				A4BA151B1A99B4C30039CA61 /* AppDelegate.m */,
 				A4BA151D1A99B4C30039CA61 /* ViewController.h */,
@@ -89,6 +107,8 @@
 				A4BA15231A99B4C30039CA61 /* Images.xcassets */,
 				A4BA15251A99B4C30039CA61 /* LaunchScreen.xib */,
 				A4BA15161A99B4C30039CA61 /* Supporting Files */,
+				A43BDEC71AA1B8D70094E617 /* Clap.m */,
+				A43BDECA1AA1B9310094E617 /* Clap.h */,
 			);
 			path = clap;
 			sourceTree = "<group>";
@@ -199,9 +219,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A43BDEC51AA1B63A0094E617 /* clap.wav in Resources */,
 				A4BA15221A99B4C30039CA61 /* Main.storyboard in Resources */,
+				A43BDEC61AA1B63A0094E617 /* icon.png in Resources */,
 				A4BA15271A99B4C30039CA61 /* LaunchScreen.xib in Resources */,
 				A4BA15241A99B4C30039CA61 /* Images.xcassets in Resources */,
+				A43BDEC41AA1B63A0094E617 /* clap-button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4BA151F1A99B4C30039CA61 /* ViewController.m in Sources */,
+				A43BDEC81AA1B8D70094E617 /* Clap.m in Sources */,
 				A4BA151C1A99B4C30039CA61 /* AppDelegate.m in Sources */,
 				A4BA15191A99B4C30039CA61 /* main.m in Sources */,
 			);
@@ -414,6 +438,7 @@
 				A4BA15381A99B4C30039CA61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4BA15391A99B4C30039CA61 /* Build configuration list for PBXNativeTarget "clapTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +447,7 @@
 				A4BA153B1A99B4C30039CA61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
